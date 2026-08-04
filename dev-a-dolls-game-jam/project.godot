@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Dev-a-Dolls Game-jam"
+run/main_scene="uid://dq1i6nsvlwcaj"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://8bhqwml23am2"
 
 [display]
 
