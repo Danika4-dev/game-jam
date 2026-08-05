@@ -1,5 +1,28 @@
 [gd_scene format=3 uid="uid://c634d7cehrqsc"]
 
+[ext_resource type="PackedScene" uid="uid://o2g8w7ghvhbb" path="res://scenes/Chunks/blooming_grove_04.tscn" id="1_inth5"]
+[ext_resource type="PackedScene" uid="uid://b8jpvyiqo2ecs" path="res://scenes/Chunks/blooming_grove_01.tscn" id="2_qficy"]
+[ext_resource type="PackedScene" uid="uid://dme5rmgulwt8u" path="res://scenes/Chunks/blooming_grove_02.tscn" id="3_aqshw"]
+[ext_resource type="PackedScene" uid="uid://b22oflnwxqfhl" path="res://scenes/Chunks/blooming_grove_03.tscn" id="4_ng6hi"]
+[ext_resource type="PackedScene" uid="uid://wq15ayjiuh3u" path="res://scenes/Chunks/blooming_grove_05.tscn" id="5_8x3r3"]
+[ext_resource type="PackedScene" uid="uid://cvoxfmw8hjte4" path="res://scenes/Player/player.tscn" id="6_2g54g"]
+
 [node name="World" type="Node2D" unique_id=1849477855]
 
 [node name="ChunkContainer" type="Node2D" parent="." unique_id=991587023]
+
+[node name="Chunktemplate4" parent="ChunkContainer" unique_id=1278439345 instance=ExtResource("1_inth5")]
+
+[node name="Chunktemplate" parent="ChunkContainer" unique_id=770898519 instance=ExtResource("2_qficy")]
+position = Vector2(0, 384)
+
+[node name="Chunktemplate2" parent="ChunkContainer" unique_id=629919846 instance=ExtResource("3_aqshw")]
+position = Vector2(0, 768)
+
+[node name="Chunktemplate3" parent="ChunkContainer" unique_id=1828225300 instance=ExtResource("4_ng6hi")]
+position = Vector2(0, 1152)
+
+[node name="Chunktemplate5" parent="ChunkContainer" unique_id=1635347057 instance=ExtResource("5_8x3r3")]
+position = Vector2(0, -384)
+
+[node name="Player" parent="." unique_id=1371344580 instance=ExtResource("6_2g54g")]
